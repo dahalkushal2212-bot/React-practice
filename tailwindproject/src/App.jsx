@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-import './App.css'
+import Card from "/src/components/card.jsx"
 
 function App() {
-  
-
   return (
     <>
-   <h1 class="text-3xl font-bold underline bg-green-400 color-black">
-    Hello world!
-  </h1>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <Card
+        title="Tailwind Card"
+        description="This card is made using Tailwind CSS."
+        image="https://picsum.photos/400/300"
+      />
+    </div>
+    
+      <Card
+        title="Kushal dahla Card created"
+        description="This card IS duplicate of the first one."
+        image="https://picsum.photos/400/400"
+      />
+    
     </>
-  )
+
+  );
 }
 
-export default App
+export default App;
